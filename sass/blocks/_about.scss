@@ -1,0 +1,30 @@
+.about {
+    &__title {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 75px;
+        text-transform: uppercase;
+    }
+
+    &__inner {
+        @include FlexBlock (space-between, center)
+    }
+
+    &__text-title {
+        font-size: 25px;
+        line-height: 38px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: justify;
+    }
+    &__images-inner{
+        @include FlexBlock(space-between,center)
+    }
+}

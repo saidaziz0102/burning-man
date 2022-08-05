@@ -1,0 +1,32 @@
+@import 'base/mixin';
+@import 'base/variables';
+@import 'base/mp';
+
+*,
+*:after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anton",sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/about';
+@import 'blocks/footer';
+@import 'base/media';
+

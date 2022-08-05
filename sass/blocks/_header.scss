@@ -1,0 +1,73 @@
+@import '../base/variables';
+
+.burger {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    height: 900px;
+    background-image: url('../img/header/header-bg.jpg');
+    background-size: cover;
+
+    &__top {
+        @include FlexBlock(space-between, center);
+        color: $secondaryBG;
+    }
+
+    &__wrapper {
+        @include FlexBlock(space-between, center);
+        margin-top: 30px;
+    }
+
+    &__menu {
+        margin-left: 30px;
+        @include FlexBlock();
+    }
+
+    &__menu-item {
+        margin-left: 2rem;
+        transition: .2s all linear;
+        border-bottom: 2px solid transparent;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    &__menu-item:hover {
+        border-bottom: 3px solid $secondaryBG;
+    }
+
+    &__title-mini {
+        font-size: 30px;
+        line-height: 45px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $secondaryBG;
+    }
+
+    &__title {
+        font-size: 100px;
+        line-height: 151px;
+        text-transform: uppercase;
+        color: $secondaryBG;
+    }
+
+    &__btn {
+        padding: 18px 45px 17px;
+        background-color: transparent;
+        border: 2px solid $secondaryBG;
+        color: $secondaryBG;
+        font-size: 17px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        transition: .2s all linear;
+    }
+
+    &__btn:hover {
+        border: 3px solid $secondaryBG;
+    }
+
+}

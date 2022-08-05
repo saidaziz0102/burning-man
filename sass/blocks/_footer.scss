@@ -1,0 +1,21 @@
+.footer {
+    &__wrapper {
+        @include FlexBlock(inline-start)
+    }
+
+    &__source {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    &__author {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
